@@ -26,9 +26,6 @@ services:
       - usuarios-postgres
     networks:
       usuarios:
-      undersounds:
-    profiles:
-      - prod
 
   usuarios-postgres:
     image: postgres:17.6-alpine
@@ -48,5 +45,3 @@ volumes:
 
 networks:
   usuarios:
-  undersounds:
-    external: true
